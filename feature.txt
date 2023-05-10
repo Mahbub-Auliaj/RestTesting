@@ -1,0 +1,71 @@
+Scenario: POST As admin I have be able to assign product rating
+    Given I set POST product rating api endpoints
+    When I send POST product rating HTTP request
+    Then I receive valid HTTP response code 200 5
+    And I receive valid post data for product rating
+
+  Scenario: GET As admin I have be able to get product rating
+    Given I set GET product rating api endpoints
+    When I send GET product rating HTTP request
+    Then I receive valid HTTP response code 200 6
+    And I receive valid get rating data for product
+
+  Scenario: POST As admin I have be able to post comment product
+    Given I set POST comment api endpoints
+    When I send POST comment HTTP request
+    Then I receive valid HTTP response code 200 7
+    And I receive valid post data for product comment
+
+  Scenario: GET As admin I have be able to get product comment
+    Given I set GET comment api endpoints
+    When I send GET comment HTTP request
+    Then I receive valid HTTP response code 200 8
+    And I receive valid get data for product comment
+
+  Scenario: POST As admin I have be able to make product category
+    Given I set POST category api endpoints
+    When I send POST category HTTP request
+    Then I receive valid HTTP response code 200 9
+    And I receive valid post data for new product category
+
+  Scenario: GET As admin I have be able to get product category
+    Given I set GET category api endpoints
+    When I send GET category HTTP request
+    Then I receive valid HTTP response code 200 10
+    And I receive valid get data for product category
+
+  Scenario: DELETE As admin i have be able to delete product category
+    Given I set DELETE category api endpoint
+    When I send DELETE category HTTP request
+    Then I receive valid HTTP response code 200 11
+
+  Scenario: POST As admin I have be able to register
+    Given I set POST register api endpoints
+    When I send POST register HTTP request
+    Then I receive valid HTTP response code 200 12
+    And I receive valid post data for new user
+
+  Scenario: POST As admin I have be able to login
+    Given I set POST login api endpoints
+    When I send POST login HTTP request
+    Then I receive valid HTTP response code 200 13
+    And I receive valid post data for login user
+
+  Scenario: GET As admin I have be able to get user information
+    Given I set GET user info api endpoints
+    When I send GET user info HTTP request
+    Then I receive valid HTTP response code 200 14
+    And I receive valid get data for user information
+
+  Scenario: POST As admin I have be able to make new order
+    Given I set POST order api endpoints
+    When I send POST order HTTP request
+    Then I receive valid HTTP response code 200 15
+    And I receive valid post data for new order
+
+  Scenario: GET As admin I have be able to get orders
+    Given I set GET order api endpoints
+    When I send GET order HTTP request
+    Then I receive valid HTTP response code 200 16
+    And I receive valid get data for order
+
